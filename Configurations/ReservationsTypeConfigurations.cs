@@ -13,11 +13,10 @@ namespace TransportReservationSystem.Configurations
             //Basic many-to-many
             // M (Reservation) - M (Passengers)             
             builder.HasMany(p => p.Passengers)
-                .WithMany(r => r.Reservations);          
+                .WithMany(r => r.Reservations);
 
 
             //Index
-            builder.HasIndex(i => i.PassengerId);
             builder.HasIndex(i => i.TotalCost);
             builder.HasIndex(i => i.Seats);
 
@@ -32,5 +31,5 @@ namespace TransportReservationSystem.Configurations
         }
 
     }
-    
+
 }

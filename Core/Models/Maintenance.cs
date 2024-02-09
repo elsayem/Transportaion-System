@@ -13,8 +13,8 @@ namespace TransportReservationSystem.Core.Models
         public virtual Vehicle Vehicle { get; set; } = null!;
         public int DriverId { get; set; }
         public virtual Driver Driver { get; set; } = null!;
-        public int TripId {  get; set; }
-        public virtual Trip Trip { get; set; } = null!;
+        //public int TripId {  get; set; }
+        //public virtual Trip Trip { get; set; } = null!;
 
         public decimal CostOfMaintenece {  get; set; }
         public DateTime CreatedAt { get; set; }

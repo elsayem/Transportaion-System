@@ -11,7 +11,7 @@ namespace TransportReservationSystem.Configurations
 
             //Relations 
             // 1 (vehicle) - M (ScheduleMaintence)        --> Done in the Vehicle Configrations     
-            
+
 
 
             //Index
@@ -31,5 +31,5 @@ namespace TransportReservationSystem.Configurations
 
         }
     }
-    
+
 }

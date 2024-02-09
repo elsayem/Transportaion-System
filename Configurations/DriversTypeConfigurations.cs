@@ -30,7 +30,7 @@ namespace TransportReservationSystem.Configurations
             //Index
             builder.HasIndex(i => i.Name);
             builder.HasIndex(i => i.Email);
-            builder.HasIndex(i => i.Station);            
+            //builder.HasIndex(i => i.Station);
 
 
             //PK
@@ -38,8 +38,8 @@ namespace TransportReservationSystem.Configurations
 
 
             //Constrains
-            builder.Property(x => x.Name).HasColumnType("VARCHAR").HasMaxLength(50).IsRequired();
-            builder.Property(x => x.Phone).HasColumnType("int").HasMaxLength(11).IsRequired();
+            //builder.Property(x => x.Name).HasMaxLength(50);
+            //builder.Property(x => x.Phone).HasColumnType("int").HasMaxLength(11);
             builder.Property(x => x.License).HasColumnType("int").HasMaxLength(14).IsRequired();
             builder.Property(x => x.Salary).IsRequired();
             builder.Property(x => x.Password).HasColumnType("VARCHAR").IsRequired();

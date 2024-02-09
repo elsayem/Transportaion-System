@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Reflection.Emit;
 using TransportReservationSystem.Core.Models;
 
 namespace TransportReservationSystem.Configurations
@@ -16,11 +17,26 @@ namespace TransportReservationSystem.Configurations
                 .HasForeignKey(x => x.TripId)
                 .IsRequired(false);
 
+            builder.HasOne(x => x.Source)
+                .WithMany(x => x.SourceTrips)
+                .HasForeignKey(x => x.SourceId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(x => x.Destination)
+                .WithMany(x => x.DestinationTrips)
+                .HasForeignKey(x => x.DestinationId)
+                .OnDelete(DeleteBehavior.Restrict) ;
+ 
+            //builder.HasKey(x=> new {x.SourceId, x.DestinationId});
+            //builder.HasOne(e => e.Source).WithOne(t => t.Trip).HasForeignKey<Trip>(k => k.TripId);
+            //builder.HasOne(e => e.Destination).WithOne(t => t.Trip);
+
+            //builder.HasOne(e => e.Destination).WithOne(t => t.Trip);
 
             //Index
-            builder.HasIndex(t => t.TripNo);
-            builder.HasIndex(t => t.DepatureDate);
-            builder.HasIndex(t => t.Destination);
+            //builder.HasIndex(t => t.TripNo);
+            //builder.HasIndex(t => t.DepatureDate);
+            //builder.HasIndex(t => t.Destination);
 
             //PK
             builder.HasKey(t => t.Id);

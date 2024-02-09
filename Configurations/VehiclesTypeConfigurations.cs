@@ -27,6 +27,8 @@ namespace TransportReservationSystem.Configurations
             builder.Property(x => x.LicensePlate).HasMaxLength(8).IsRequired();
             builder.Property(x => x.Year).HasMaxLength(4).IsRequired();
             builder.Property(x => x.Model).IsRequired();
+            builder.Property(x => x.CreatedAt).HasDefaultValueSql("GETDATE()");
+
 
         }
 

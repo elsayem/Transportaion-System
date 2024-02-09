@@ -4151,11 +4151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Software Engineering\\ITI\\Examination System\\Transportation-System-master\\TransportReservationSystem.csproj",
+      "projectUniqueName": "E:\\Software Engineering\\ITI\\Projects\\Transportation\\Transportation-System\\TransportReservationSystem.csproj",
       "projectName": "TransportReservationSystem",
-      "projectPath": "E:\\Software Engineering\\ITI\\Examination System\\Transportation-System-master\\TransportReservationSystem.csproj",
+      "projectPath": "E:\\Software Engineering\\ITI\\Projects\\Transportation\\Transportation-System\\TransportReservationSystem.csproj",
       "packagesPath": "C:\\Users\\ams15\\.nuget\\packages\\",
-      "outputPath": "E:\\Software Engineering\\ITI\\Examination System\\Transportation-System-master\\obj\\",
+      "outputPath": "E:\\Software Engineering\\ITI\\Projects\\Transportation\\Transportation-System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ams15\\AppData\\Roaming\\NuGet\\NuGet.Config",

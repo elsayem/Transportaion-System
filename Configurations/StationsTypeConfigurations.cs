@@ -11,12 +11,12 @@ namespace TransportReservationSystem.Configurations
 
             //Relations 
             // one (trip) to many (staions)
-            
+
 
 
             //Index
             builder.HasIndex(t => t.Name);
-            
+
 
             //PK
             builder.HasKey(t => t.Id);
@@ -25,9 +25,9 @@ namespace TransportReservationSystem.Configurations
             //Constrains
             builder.Property(t => t.Name).HasColumnType("VARCHAR").IsRequired();
             builder.Property(t => t.CreatedAt).HasColumnType("date").IsRequired();
-            builder.Property(t => t.UpdatedAt).HasColumnType("date").IsRequired();
+            builder.Property(t => t.UpdatedAt).HasColumnType("date");
 
         }
     }
-    
+
 }

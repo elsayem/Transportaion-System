@@ -12,10 +12,19 @@ using TransportReservationSystem.Core.Models;
 
 namespace TransportReservationSystem.Data.Context
 {
-    public class ApplicaitonDbContext: DbContext
-    {
-        
 
+    public class ApplicaitonDbContext : DbContext
+    {
+
+        //DB Sets
+        public DbSet<Driver> Drivers { get; set; }
+        public DbSet<Category> Categorys { get; set; }
+        public DbSet<Maintenance> Maintenances { get; set; }
+        public DbSet<ScheduleMaintence> ScheduleMaintences { get; set; }
+        public DbSet<Passenger> Passengers { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
+        public DbSet<Trip> Trips { get; set; }
 
         //public ApplicaitonDbContext()
         //{
@@ -24,22 +33,30 @@ namespace TransportReservationSystem.Data.Context
         //}
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
-            optionsBuilder.UseLazyLoadingProxies()
-                .UseSqlServer("Data Source =.;Initial Catalog = Transport2 ;Integrated Security = True; Connect Timeout = 30; Encrypt=True;Trust Server Certificate=True;Application Intent = ReadWrite; Multi Subnet Failover=False");
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
+        //    optionsBuilder.UseLazyLoadingProxies()
+        //        .UseSqlServer("Data Source =.;Initial Catalog = Transport2 ;Integrated Security = True; Connect Timeout = 30; Encrypt=True;Trust Server Certificate=True;Application Intent = ReadWrite; Multi Subnet Failover=False");
 
+
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer("Server=Administrator;Database=Transport;Encrypt=false;Trusted_Connection=True;TrustServerCertificate=True");
+        //}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
+            
             //Configurations
-            new DriversTypeConfigurations().Configure(modelBuilder.Entity<Driver>());
-            //modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicaitonDbContext).Assembly);
+            //new DriversTypeConfigurations().Configure(modelBuilder.Entity<Driver>());
+            //Use this Line to Apply All Configrations at Once 
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicaitonDbContext).Assembly);
         }
-        public DbSet<Driver> Drivers { get; set; }
-        public DbSet<Category> Categorys { get; set; }
-        public DbSet<Maintenance> Maintenances { get; set; }
-        public DbSet<ScheduleMaintence> ScheduleMaintences { get; set; }
-        public DbSet<Passenger> Passengers { get; set; }
+
+       
+
+
+
     }
 }

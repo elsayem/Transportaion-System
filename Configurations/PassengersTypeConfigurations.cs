@@ -13,7 +13,8 @@ namespace TransportReservationSystem.Configurations
 
             //Basic many-to-many
             // M (Reservation) - M (Passengers)   --> Done in the Reservations Configurations        
-
+            //builder.HasMany(p => p.Reservations)
+            //    .WithMany(r => r.Passengers);
 
 
             //Index

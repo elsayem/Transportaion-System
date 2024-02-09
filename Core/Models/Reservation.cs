@@ -8,10 +8,7 @@ namespace TransportReservationSystem.Core.Models
 {
     public class Reservation
     {
-        public int Id { get; set; }
-
-        public int PassengerId { get; set; }
-        public Passenger Passenger { get; set; } = null!;
+        public int Id { get; set; }       
 
         public Trip Trip { get; set; } = null!;
         public int TripId { get; set; }
@@ -25,5 +22,8 @@ namespace TransportReservationSystem.Core.Models
         public virtual ICollection<Passenger> Passengers { get; set; } = new List<Passenger>();
 
 
+
+        //public int PassengerId { get; set; }
+        //public Passenger Passenger { get; set; } = null!; 
     }
 }

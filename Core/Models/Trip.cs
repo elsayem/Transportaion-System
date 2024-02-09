@@ -12,34 +12,27 @@ namespace TransportReservationSystem.Core.Models
         public int Id {  get; set; }
         public int TripNo {  get; set; }
 
-        [Required]
         public DateTime DepatureDate {  get; set; }
 
-        [Required]
         public DateTime ArrivalDate { get; set; }
 
-        [Required]
-        public int SourceId { get; set; }
-        public virtual Station Source { get; set; } = null!;
-        [Required]
-        public int DestinationId { get; set; }
-        public Station Destination { get; set; } = null!;
 
-        [Required]
+        //Stations
+        public int? SourceId { get; set; }
+        public virtual Station? Source { get; set; } = null!;
+        public int? DestinationId { get; set; }
+        public virtual Station? Destination { get; set; } = null!;
+
         public int VehicleId { get; set; }
         public virtual Vehicle Vehicle { get; set; } = null!;
 
-        [Required]
         public int DriverId { get; set; }
         public virtual Driver Driver { get; set; } = null!;
 
-        [Required]
         public decimal Fare { get; set; }
 
-        [Required]
         public DateTime CreatedAt { get; set; }
 
-        [Required]
         public DateTime UpdatedAt { get; set; }
         public bool IsDeleted { get; set; } = false;
 

@@ -1,6 +1,11 @@
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using TransportReservationSystem.Data.Context;
+
 namespace TransportReservationSystem
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -12,6 +17,14 @@ namespace TransportReservationSystem
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
+
+
+
         }
+
     }
+
+
+
 }

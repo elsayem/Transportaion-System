@@ -4,9 +4,8 @@ using TransportReservationSystem.Core.Models;
 
 namespace TransportReservationSystem.Configurations
 {
-    public partial class DriversTypeConfigurations
-    {
-        public class MaintenancesTypeConfigurations : IEntityTypeConfiguration<Maintenance>
+    
+        public partial class MaintenancesTypeConfigurations : IEntityTypeConfiguration<Maintenance>
         {
             public void Configure(EntityTypeBuilder<Maintenance> builder)
             {
@@ -19,15 +18,15 @@ namespace TransportReservationSystem.Configurations
                 //Index
                 builder.HasIndex(i => i.CreatedAt);
                 builder.HasIndex(i => i.DriverId);
-                
+
 
                 //PK
                 builder.HasKey(i => i.Id);
 
 
                 //Constrains
-                builder.Property(p=>p.CreatedAt).IsRequired();
-                builder.Property(p=>p.CostOfMaintenece).IsRequired();
+                builder.Property(p => p.CreatedAt).IsRequired();
+                builder.Property(p => p.CostOfMaintenece).IsRequired();
                 //builder.Property(p=>p.Vehicle).IsRequired();
 
 
@@ -38,5 +37,5 @@ namespace TransportReservationSystem.Configurations
             }
         }
     }
-}
+
 
