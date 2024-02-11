@@ -9,23 +9,22 @@ namespace TransportReservationSystem.Configurations
         public void Configure(EntityTypeBuilder<Station> builder)
         {
 
+            //PK
+            builder.HasKey(x => x.Id);
+
             //Relations 
             // one (trip) to many (staions)
 
 
 
             //Index
-            builder.HasIndex(t => t.Name);
+            builder.HasIndex(x => x.Name).IsUnique();
 
-
-            //PK
-            builder.HasKey(t => t.Id);
 
 
             //Constrains
-            builder.Property(t => t.Name).HasColumnType("VARCHAR").IsRequired();
-            builder.Property(t => t.CreatedAt).HasColumnType("date").IsRequired();
-            builder.Property(t => t.UpdatedAt).HasColumnType("date");
+            builder.Property(x => x.Name).HasMaxLength(50);
+            builder.Property(t => t.CreatedAt).HasDefaultValueSql("GETDATE()");
 
         }
     }

@@ -14,35 +14,36 @@ namespace TransportReservationSystem.Configurations
         public void Configure(EntityTypeBuilder<Driver> builder)
         {
 
+            //PK
+            builder.HasKey(x => x.Id);
+
             //Relations 
             // 1 (driver) - M (Maintenances)             
             builder.HasMany(x => x.Maintenances)
                 .WithOne(x => x.Driver)
+                .HasPrincipalKey(x => x.Id)
                 .HasForeignKey(x => x.DriverId)
-                .IsRequired(false);
+                .IsRequired();
 
             // 1 (driver) - M (Trips)
-            builder.HasMany(t => t.Trips)
-                .WithOne(t => t.Driver)
-                .HasForeignKey(t => t.DriverId);
+            builder.HasMany(x => x.Trips)
+                .WithOne(x => x.Driver)
+                .HasPrincipalKey(x => x.Id)
+                .HasForeignKey(x => x.DriverId)
+                .IsRequired();
 
 
             //Index
-            builder.HasIndex(i => i.Name);
-            builder.HasIndex(i => i.Email);
-            //builder.HasIndex(i => i.Station);
-
-
-            //PK
-            builder.HasKey(d => d.Id);
+            builder.HasIndex(x => x.Username);
+            builder.HasIndex(x => x.Email).IsUnique();
+            builder.HasIndex(x => x.Phone).IsUnique();
 
 
             //Constrains
-            //builder.Property(x => x.Name).HasMaxLength(50);
-            //builder.Property(x => x.Phone).HasColumnType("int").HasMaxLength(11);
-            builder.Property(x => x.License).HasColumnType("int").HasMaxLength(14).IsRequired();
-            builder.Property(x => x.Salary).IsRequired();
-            builder.Property(x => x.Password).HasColumnType("VARCHAR").IsRequired();
+            builder.Property(x => x.Username).HasMaxLength(50);
+            builder.Property(x => x.License).HasMaxLength(14);
+            builder.Property(x => x.Salary).HasDefaultValue(10000);
+            builder.Property(x => x.CreatedAt).HasDefaultValueSql("GETDATE()");
 
         }
     }

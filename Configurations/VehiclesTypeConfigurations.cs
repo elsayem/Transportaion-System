@@ -8,25 +8,44 @@ namespace TransportReservationSystem.Configurations
     {
         public void Configure(EntityTypeBuilder<Vehicle> builder)
         {
+            //PK
+            builder.HasKey(x => x.Id);
+
 
             //Relations 
             //One(vehicle) to Many(Schaduled Maintinance)
-            builder.HasMany(m => m.ScheduleMaintences)
-                .WithOne(m => m.Vehicle)
-                .HasForeignKey(f => f.VehicleId);
+            builder.HasMany(x => x.ScheduleMaintences)
+                .WithOne(x => x.Vehicle)
+                .HasPrincipalKey(x => x.Id)
+                .HasForeignKey(x => x.VechieId)
+                .IsRequired();
+
+            //One(vehicle) to Many(Maintinance)
+            builder.HasMany(x => x.Maintenances)
+                .WithOne(x => x.Vehicle)
+                .HasPrincipalKey(x => x.Id)
+                .HasForeignKey(x => x.VechieId)
+                .IsRequired();
+
+            //One(vehicle) to Many(Maintinance)
+            builder.HasMany(x => x.Trips)
+                .WithOne(x => x.Vehicle)
+                .HasPrincipalKey(x => x.Id)
+                .HasForeignKey(x => x.VehicleId)
+                .IsRequired();
 
             //Index
-            builder.HasIndex(i => i.Model);
-            builder.HasIndex(i => i.CategoryId);
+            builder.HasIndex(x => x.Model);
+            builder.HasIndex(x => x.CategoryId);
 
-            //PK
-            builder.HasKey(d => d.Id);
+
 
 
             //Constrains            
             builder.Property(x => x.LicensePlate).HasMaxLength(8).IsRequired();
+            builder.Property(x => x.VehicleNo).HasDefaultValueSql("NEXT VALUE FOR VehicleSequence");
+
             builder.Property(x => x.Year).HasMaxLength(4).IsRequired();
-            builder.Property(x => x.Model).IsRequired();
             builder.Property(x => x.CreatedAt).HasDefaultValueSql("GETDATE()");
 
 

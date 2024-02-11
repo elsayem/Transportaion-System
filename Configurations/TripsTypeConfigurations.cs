@@ -10,42 +10,34 @@ namespace TransportReservationSystem.Configurations
         public void Configure(EntityTypeBuilder<Trip> builder)
         {
 
+            //PK
+            builder.HasKey(x => x.Id);
+
+
             //Relations 
+
+            // 1 (vehicle) - M (Trip) --> Done in the Vehicle Configrations  
             // 1 (trip) - M (Reservations)             
             builder.HasMany(x => x.Reservations)
                 .WithOne(x => x.Trip)
+                .HasPrincipalKey(x => x.Id)
                 .HasForeignKey(x => x.TripId)
-                .IsRequired(false);
+                .IsRequired();
 
-            builder.HasOne(x => x.Source)
-                .WithMany(x => x.SourceTrips)
-                .HasForeignKey(x => x.SourceId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            builder.HasOne(x => x.Destination)
-                .WithMany(x => x.DestinationTrips)
-                .HasForeignKey(x => x.DestinationId)
-                .OnDelete(DeleteBehavior.Restrict) ;
- 
-            //builder.HasKey(x=> new {x.SourceId, x.DestinationId});
-            //builder.HasOne(e => e.Source).WithOne(t => t.Trip).HasForeignKey<Trip>(k => k.TripId);
-            //builder.HasOne(e => e.Destination).WithOne(t => t.Trip);
-
-            //builder.HasOne(e => e.Destination).WithOne(t => t.Trip);
 
             //Index
-            //builder.HasIndex(t => t.TripNo);
-            //builder.HasIndex(t => t.DepatureDate);
-            //builder.HasIndex(t => t.Destination);
-
-            //PK
-            builder.HasKey(t => t.Id);
+            builder.HasIndex(x => new { x.VehicleId, x.DepatureDate }).IsUnique();
+            builder.HasIndex(x => new { x.DriverId , x.DepatureDate}).IsUnique();
+            builder.HasIndex(x => x.DepatureDate);
+            builder.HasIndex(x => x.Source);
+            builder.HasIndex(x => x.Destination);
+            builder.HasIndex(x => x.DriverId);
+            builder.HasIndex(x => x.VehicleId);
 
 
             //Constrains
-            builder.Property(t => t.TripNo).IsRequired();
-            builder.Property(t => t.CreatedAt).HasDefaultValueSql("GETDATE()");
-            builder.Property(t => t.UpdatedAt).HasColumnType("date");
+            builder.Property(x => x.TripNo).HasDefaultValueSql("NEXT VALUE FOR TripSequence");
+            builder.Property(x => x.CreatedAt).HasDefaultValueSql("GETDATE()");
             //The Other constraints Implemnted in the Trip Model 
 
 

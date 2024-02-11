@@ -9,25 +9,21 @@ namespace TransportReservationSystem.Configurations
         public void Configure(EntityTypeBuilder<Reservation> builder)
         {
 
+            //PK
+            builder.HasKey(x => x.Id);
+
             //Relations 
-            //Basic many-to-many
-            // M (Reservation) - M (Passengers)             
-            builder.HasMany(p => p.Passengers)
-                .WithMany(r => r.Reservations);
+
+            // 1 (Passengers) - M (Reservation) --> Done in the Passengers  Configurations
+            // 1 (Trips) - M (Reservation) --> Done in the Trips  Configurations
 
 
             //Index
-            builder.HasIndex(i => i.TotalCost);
-            builder.HasIndex(i => i.Seats);
-
-            //PK
-            builder.HasKey(d => d.Id);
-
+            builder.HasIndex(x => new {x.TripId , x.PassengerId}).IsUnique();
 
             //Constrains
-            builder.Property(x => x.Seats).IsRequired();
-            builder.Property(x => x.TotalCost).IsRequired();
-            builder.Property(x => x.Seats).IsRequired();
+            builder.Property(x => x.CreatedAt).HasDefaultValueSql("GETDATE()");
+
         }
 
     }

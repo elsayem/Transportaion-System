@@ -1,8 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <ItemGroup>
-        <Compile Update="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-    </ItemGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Dialog\FrmValidationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmPassengers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmVehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\NewDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RJControls\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="RJControls\RJRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="RJControls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

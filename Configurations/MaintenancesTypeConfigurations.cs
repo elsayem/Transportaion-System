@@ -10,24 +10,24 @@ namespace TransportReservationSystem.Configurations
             public void Configure(EntityTypeBuilder<Maintenance> builder)
             {
 
+                //PK
+                builder.HasKey(x => x.Id);
+
                 //Relations 
                 // 1 (driver) - M (Maintenances) --> Done in the Drivers  Configurations
-
+                // 1 (Vehicle) - M (Maintenances) --> Done in the Vehicle  Configurations
 
 
                 //Index
-                builder.HasIndex(i => i.CreatedAt);
-                builder.HasIndex(i => i.DriverId);
+                builder.HasIndex(x => x.DriverId);
+                builder.HasIndex(x => x.VechieId);
+                builder.HasIndex(x => x.TripId);
 
 
-                //PK
-                builder.HasKey(i => i.Id);
 
 
-                //Constrains
-                builder.Property(p => p.CreatedAt).IsRequired();
-                builder.Property(p => p.CostOfMaintenece).IsRequired();
-                //builder.Property(p=>p.Vehicle).IsRequired();
+            //Constrains
+            builder.Property(x => x.CreatedAt).HasDefaultValueSql("GETDATE()");
 
 
 
