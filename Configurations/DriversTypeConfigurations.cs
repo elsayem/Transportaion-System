@@ -37,7 +37,7 @@ namespace TransportReservationSystem.Configurations
             builder.HasIndex(x => x.Username);
             builder.HasIndex(x => x.Email).IsUnique();
             builder.HasIndex(x => x.Phone).IsUnique();
-
+            builder.HasIndex(x => x.License).IsUnique();
 
             //Constrains
             builder.Property(x => x.Username).HasMaxLength(50);
