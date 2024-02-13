@@ -59,20 +59,18 @@
             pictureBox1.BackColor = SystemColors.Control;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.Image = Properties.Resources.Coach_Bus_mockup_04;
-            pictureBox1.Location = new Point(-5, -1);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(-4, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(966, 873);
+            pictureBox1.Size = new Size(845, 655);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.avatar;
-            pictureBox2.Location = new Point(1078, 33);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(943, 25);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(155, 133);
+            pictureBox2.Size = new Size(136, 100);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -80,33 +78,29 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.EmailInput3;
-            pictureBox3.Location = new Point(997, 259);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Location = new Point(872, 194);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(339, 93);
+            pictureBox3.Size = new Size(297, 70);
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
             // 
             // EmailInput
             // 
             EmailInput.BorderStyle = BorderStyle.None;
-            EmailInput.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            EmailInput.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             EmailInput.ForeColor = Color.DarkGray;
-            EmailInput.Location = new Point(1029, 282);
-            EmailInput.Margin = new Padding(3, 4, 3, 4);
+            EmailInput.Location = new Point(916, 227);
             EmailInput.Multiline = true;
             EmailInput.Name = "EmailInput";
-            EmailInput.Size = new Size(254, 27);
+            EmailInput.Size = new Size(222, 20);
             EmailInput.TabIndex = 0;
-            EmailInput.TextChanged += EmailInput_TextChanged;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.PasswordInput1;
-            pictureBox4.Location = new Point(997, 360);
-            pictureBox4.Margin = new Padding(3, 4, 3, 4);
+            pictureBox4.Location = new Point(872, 270);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(339, 91);
+            pictureBox4.Size = new Size(297, 68);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
@@ -114,38 +108,36 @@
             // PasswordInput
             // 
             PasswordInput.BorderStyle = BorderStyle.None;
-            PasswordInput.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PasswordInput.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             PasswordInput.ForeColor = Color.DarkGray;
-            PasswordInput.Location = new Point(1047, 401);
-            PasswordInput.Margin = new Padding(3, 4, 3, 4);
+            PasswordInput.Location = new Point(916, 301);
             PasswordInput.Multiline = true;
             PasswordInput.Name = "PasswordInput";
             PasswordInput.PasswordChar = '*';
-            PasswordInput.Size = new Size(254, 27);
+            PasswordInput.Size = new Size(222, 20);
             PasswordInput.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(1057, 191);
+            label1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(925, 143);
             label1.Name = "label1";
-            label1.Size = new Size(211, 24);
+            label1.Size = new Size(186, 20);
             label1.TabIndex = 10;
             label1.Text = "Get Started Login Below";
             // 
             // ShowPasswordBtn
             // 
             ShowPasswordBtn.AutoSize = true;
-            ShowPasswordBtn.Location = new Point(1267, 459);
-            ShowPasswordBtn.Margin = new Padding(3, 4, 3, 4);
-            ShowPasswordBtn.MinimumSize = new Size(51, 29);
+            ShowPasswordBtn.Location = new Point(1109, 344);
+            ShowPasswordBtn.MinimumSize = new Size(45, 22);
             ShowPasswordBtn.Name = "ShowPasswordBtn";
             ShowPasswordBtn.OffBackColor = Color.Gray;
             ShowPasswordBtn.OffToggleColor = Color.Gainsboro;
             ShowPasswordBtn.OnBackColor = Color.MediumSlateBlue;
             ShowPasswordBtn.OnToggleColor = Color.WhiteSmoke;
-            ShowPasswordBtn.Size = new Size(51, 29);
+            ShowPasswordBtn.Size = new Size(45, 22);
             ShowPasswordBtn.TabIndex = 15;
             ShowPasswordBtn.UseVisualStyleBackColor = true;
             ShowPasswordBtn.CheckedChanged += ShowPasswordBtn_CheckedChanged;
@@ -153,10 +145,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(1013, 465);
+            label2.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(886, 349);
             label2.Name = "label2";
-            label2.Size = new Size(129, 20);
+            label2.Size = new Size(108, 17);
             label2.TabIndex = 16;
             label2.Text = "Show Password";
             // 
@@ -164,31 +156,28 @@
             // 
             PassengerRBtn.AutoSize = true;
             PassengerRBtn.CheckedColor = Color.MediumSlateBlue;
-            PassengerRBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PassengerRBtn.Location = new Point(32, 13);
-            PassengerRBtn.Margin = new Padding(3, 4, 3, 4);
-            PassengerRBtn.MinimumSize = new Size(0, 28);
+            PassengerRBtn.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PassengerRBtn.Location = new Point(28, 10);
+            PassengerRBtn.MinimumSize = new Size(0, 21);
             PassengerRBtn.Name = "PassengerRBtn";
-            PassengerRBtn.Padding = new Padding(11, 0, 0, 0);
-            PassengerRBtn.Size = new Size(126, 28);
+            PassengerRBtn.Padding = new Padding(10, 0, 0, 0);
+            PassengerRBtn.Size = new Size(104, 21);
             PassengerRBtn.TabIndex = 17;
             PassengerRBtn.TabStop = true;
             PassengerRBtn.Text = "Passenger ";
             PassengerRBtn.UnCheckedColor = Color.Gray;
             PassengerRBtn.UseVisualStyleBackColor = true;
-            PassengerRBtn.CheckedChanged += PassengerRBtn_CheckedChanged;
             // 
             // StaffRBtn
             // 
             StaffRBtn.AutoSize = true;
             StaffRBtn.CheckedColor = Color.MediumSlateBlue;
-            StaffRBtn.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            StaffRBtn.Location = new Point(231, 13);
-            StaffRBtn.Margin = new Padding(3, 4, 3, 4);
-            StaffRBtn.MinimumSize = new Size(0, 28);
+            StaffRBtn.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            StaffRBtn.Location = new Point(202, 10);
+            StaffRBtn.MinimumSize = new Size(0, 21);
             StaffRBtn.Name = "StaffRBtn";
-            StaffRBtn.Padding = new Padding(11, 0, 0, 0);
-            StaffRBtn.Size = new Size(76, 28);
+            StaffRBtn.Padding = new Padding(10, 0, 0, 0);
+            StaffRBtn.Size = new Size(64, 21);
             StaffRBtn.TabIndex = 18;
             StaffRBtn.TabStop = true;
             StaffRBtn.Text = "Staff";
@@ -200,21 +189,18 @@
             panel1.BackColor = Color.AliceBlue;
             panel1.Controls.Add(PassengerRBtn);
             panel1.Controls.Add(StaffRBtn);
-            panel1.Location = new Point(997, 507);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(872, 380);
             panel1.Name = "panel1";
-            panel1.Size = new Size(339, 55);
+            panel1.Size = new Size(297, 41);
             panel1.TabIndex = 19;
-            panel1.Paint += panel1_Paint;
             // 
             // LoginBtnPic
             // 
             LoginBtnPic.Cursor = Cursors.Hand;
             LoginBtnPic.Image = Properties.Resources.RegisterBtn;
-            LoginBtnPic.Location = new Point(998, 593);
-            LoginBtnPic.Margin = new Padding(3, 4, 3, 4);
+            LoginBtnPic.Location = new Point(873, 445);
             LoginBtnPic.Name = "LoginBtnPic";
-            LoginBtnPic.Size = new Size(339, 87);
+            LoginBtnPic.Size = new Size(297, 65);
             LoginBtnPic.SizeMode = PictureBoxSizeMode.Zoom;
             LoginBtnPic.TabIndex = 9;
             LoginBtnPic.TabStop = false;
@@ -230,10 +216,9 @@
             LoginBtn.FlatStyle = FlatStyle.Flat;
             LoginBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LoginBtn.ForeColor = Color.White;
-            LoginBtn.Location = new Point(1013, 607);
-            LoginBtn.Margin = new Padding(3, 4, 3, 4);
+            LoginBtn.Location = new Point(886, 455);
             LoginBtn.Name = "LoginBtn";
-            LoginBtn.Size = new Size(306, 53);
+            LoginBtn.Size = new Size(268, 40);
             LoginBtn.TabIndex = 11;
             LoginBtn.Text = "Login";
             LoginBtn.UseVisualStyleBackColor = false;
@@ -243,10 +228,9 @@
             // 
             RegisterBtnPic.Cursor = Cursors.Hand;
             RegisterBtnPic.Image = Properties.Resources.RegisterBtn;
-            RegisterBtnPic.Location = new Point(998, 688);
-            RegisterBtnPic.Margin = new Padding(3, 4, 3, 4);
+            RegisterBtnPic.Location = new Point(873, 516);
             RegisterBtnPic.Name = "RegisterBtnPic";
-            RegisterBtnPic.Size = new Size(339, 87);
+            RegisterBtnPic.Size = new Size(297, 65);
             RegisterBtnPic.SizeMode = PictureBoxSizeMode.Zoom;
             RegisterBtnPic.TabIndex = 12;
             RegisterBtnPic.TabStop = false;
@@ -262,10 +246,9 @@
             RegisterBtn.FlatStyle = FlatStyle.Flat;
             RegisterBtn.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             RegisterBtn.ForeColor = Color.White;
-            RegisterBtn.Location = new Point(1013, 701);
-            RegisterBtn.Margin = new Padding(3, 4, 3, 4);
+            RegisterBtn.Location = new Point(886, 526);
             RegisterBtn.Name = "RegisterBtn";
-            RegisterBtn.Size = new Size(306, 53);
+            RegisterBtn.Size = new Size(268, 40);
             RegisterBtn.TabIndex = 13;
             RegisterBtn.Text = "Register";
             RegisterBtn.UseVisualStyleBackColor = false;
@@ -273,10 +256,10 @@
             // 
             // FrmLogin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(1361, 859);
+            ClientSize = new Size(1193, 652);
             Controls.Add(panel1);
             Controls.Add(label2);
             Controls.Add(ShowPasswordBtn);
@@ -294,9 +277,8 @@
             ForeColor = SystemColors.ControlDarkDark;
             HelpButton = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
-            MaximumSize = new Size(1379, 906);
-            MinimumSize = new Size(260, 906);
+            MaximumSize = new Size(1209, 691);
+            MinimumSize = new Size(230, 691);
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";

@@ -74,9 +74,10 @@
             // 
             panel8.Controls.Add(LogoutBtn);
             panel8.Controls.Add(LogoutBtnShape);
-            panel8.Location = new Point(3, 423);
+            panel8.Location = new Point(3, 566);
+            panel8.Margin = new Padding(3, 4, 3, 4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(208, 229);
+            panel8.Size = new Size(238, 305);
             panel8.TabIndex = 5;
             // 
             // LogoutBtn
@@ -84,9 +85,10 @@
             LogoutBtn.BackColor = Color.DarkViolet;
             LogoutBtn.Cursor = Cursors.Hand;
             LogoutBtn.Image = Properties.Resources.sign_out_alt1;
-            LogoutBtn.Location = new Point(9, 169);
+            LogoutBtn.Location = new Point(10, 225);
+            LogoutBtn.Margin = new Padding(3, 4, 3, 4);
             LogoutBtn.Name = "LogoutBtn";
-            LogoutBtn.Size = new Size(54, 26);
+            LogoutBtn.Size = new Size(62, 35);
             LogoutBtn.SizeMode = PictureBoxSizeMode.Zoom;
             LogoutBtn.TabIndex = 5;
             LogoutBtn.TabStop = false;
@@ -95,9 +97,10 @@
             // LogoutBtnShape
             // 
             LogoutBtnShape.Image = Properties.Resources.shape_menu;
-            LogoutBtnShape.Location = new Point(-65, 152);
+            LogoutBtnShape.Location = new Point(-74, 203);
+            LogoutBtnShape.Margin = new Padding(3, 4, 3, 4);
             LogoutBtnShape.Name = "LogoutBtnShape";
-            LogoutBtnShape.Size = new Size(226, 65);
+            LogoutBtnShape.Size = new Size(258, 87);
             LogoutBtnShape.SizeMode = PictureBoxSizeMode.Zoom;
             LogoutBtnShape.TabIndex = 7;
             LogoutBtnShape.TabStop = false;
@@ -105,9 +108,10 @@
             // panel9
             // 
             panel9.Controls.Add(UsersBtn);
-            panel9.Location = new Point(3, 376);
+            panel9.Location = new Point(3, 503);
+            panel9.Margin = new Padding(3, 4, 3, 4);
             panel9.Name = "panel9";
-            panel9.Size = new Size(208, 41);
+            panel9.Size = new Size(238, 55);
             panel9.TabIndex = 5;
             // 
             // UsersBtn
@@ -120,10 +124,11 @@
             UsersBtn.ForeColor = Color.White;
             UsersBtn.Image = Properties.Resources.user_gear;
             UsersBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            UsersBtn.Location = new Point(-16, -18);
+            UsersBtn.Location = new Point(-18, -24);
+            UsersBtn.Margin = new Padding(3, 4, 3, 4);
             UsersBtn.Name = "UsersBtn";
-            UsersBtn.Padding = new Padding(30, 0, 0, 0);
-            UsersBtn.Size = new Size(240, 72);
+            UsersBtn.Padding = new Padding(34, 0, 0, 0);
+            UsersBtn.Size = new Size(274, 96);
             UsersBtn.TabIndex = 3;
             UsersBtn.Text = "                Users";
             UsersBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -133,9 +138,10 @@
             // panel3
             // 
             panel3.Controls.Add(PassengersBtn);
-            panel3.Location = new Point(3, 329);
+            panel3.Location = new Point(3, 440);
+            panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(208, 41);
+            panel3.Size = new Size(238, 55);
             panel3.TabIndex = 4;
             // 
             // PassengersBtn
@@ -148,10 +154,11 @@
             PassengersBtn.ForeColor = Color.White;
             PassengersBtn.Image = Properties.Resources.user;
             PassengersBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            PassengersBtn.Location = new Point(-16, -17);
+            PassengersBtn.Location = new Point(-18, -23);
+            PassengersBtn.Margin = new Padding(3, 4, 3, 4);
             PassengersBtn.Name = "PassengersBtn";
-            PassengersBtn.Padding = new Padding(30, 0, 0, 0);
-            PassengersBtn.Size = new Size(240, 72);
+            PassengersBtn.Padding = new Padding(34, 0, 0, 0);
+            PassengersBtn.Size = new Size(274, 96);
             PassengersBtn.TabIndex = 3;
             PassengersBtn.Text = "                Passengers";
             PassengersBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -161,9 +168,10 @@
             // panel7
             // 
             panel7.Controls.Add(ReservationBtn);
-            panel7.Location = new Point(3, 282);
+            panel7.Location = new Point(3, 377);
+            panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(208, 41);
+            panel7.Size = new Size(238, 55);
             panel7.TabIndex = 5;
             // 
             // ReservationBtn
@@ -176,10 +184,11 @@
             ReservationBtn.ForeColor = Color.White;
             ReservationBtn.Image = Properties.Resources.ticket;
             ReservationBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            ReservationBtn.Location = new Point(-16, -17);
+            ReservationBtn.Location = new Point(-18, -23);
+            ReservationBtn.Margin = new Padding(3, 4, 3, 4);
             ReservationBtn.Name = "ReservationBtn";
-            ReservationBtn.Padding = new Padding(30, 0, 0, 0);
-            ReservationBtn.Size = new Size(240, 72);
+            ReservationBtn.Padding = new Padding(34, 0, 0, 0);
+            ReservationBtn.Size = new Size(274, 96);
             ReservationBtn.TabIndex = 3;
             ReservationBtn.Text = "                Reservations";
             ReservationBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -189,9 +198,10 @@
             // panel6
             // 
             panel6.Controls.Add(VehicleBtn);
-            panel6.Location = new Point(3, 235);
+            panel6.Location = new Point(3, 314);
+            panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(208, 41);
+            panel6.Size = new Size(238, 55);
             panel6.TabIndex = 5;
             // 
             // VehicleBtn
@@ -204,10 +214,11 @@
             VehicleBtn.ForeColor = Color.White;
             VehicleBtn.Image = Properties.Resources.bus;
             VehicleBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            VehicleBtn.Location = new Point(-16, -17);
+            VehicleBtn.Location = new Point(-18, -23);
+            VehicleBtn.Margin = new Padding(3, 4, 3, 4);
             VehicleBtn.Name = "VehicleBtn";
-            VehicleBtn.Padding = new Padding(30, 0, 0, 0);
-            VehicleBtn.Size = new Size(240, 72);
+            VehicleBtn.Padding = new Padding(34, 0, 0, 0);
+            VehicleBtn.Size = new Size(274, 96);
             VehicleBtn.TabIndex = 3;
             VehicleBtn.Text = "               Vehicles";
             VehicleBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -217,9 +228,10 @@
             // panel5
             // 
             panel5.Controls.Add(DriversBtn);
-            panel5.Location = new Point(3, 188);
+            panel5.Location = new Point(3, 251);
+            panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(208, 41);
+            panel5.Size = new Size(238, 55);
             panel5.TabIndex = 5;
             // 
             // DriversBtn
@@ -232,10 +244,11 @@
             DriversBtn.ForeColor = Color.White;
             DriversBtn.Image = Properties.Resources.driver_man;
             DriversBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            DriversBtn.Location = new Point(-16, -17);
+            DriversBtn.Location = new Point(-18, -23);
+            DriversBtn.Margin = new Padding(3, 4, 3, 4);
             DriversBtn.Name = "DriversBtn";
-            DriversBtn.Padding = new Padding(30, 0, 0, 0);
-            DriversBtn.Size = new Size(240, 72);
+            DriversBtn.Padding = new Padding(34, 0, 0, 0);
+            DriversBtn.Size = new Size(274, 96);
             DriversBtn.TabIndex = 3;
             DriversBtn.Text = "               Drivers";
             DriversBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -245,9 +258,10 @@
             // panel4
             // 
             panel4.Controls.Add(DashboardBtn);
-            panel4.Location = new Point(3, 141);
+            panel4.Location = new Point(3, 188);
+            panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(208, 41);
+            panel4.Size = new Size(238, 55);
             panel4.TabIndex = 6;
             // 
             // DashboardBtn
@@ -260,10 +274,11 @@
             DashboardBtn.ForeColor = Color.White;
             DashboardBtn.Image = Properties.Resources.home_icon1;
             DashboardBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            DashboardBtn.Location = new Point(-14, -18);
+            DashboardBtn.Location = new Point(-16, -24);
+            DashboardBtn.Margin = new Padding(3, 4, 3, 4);
             DashboardBtn.Name = "DashboardBtn";
-            DashboardBtn.Padding = new Padding(30, 0, 0, 0);
-            DashboardBtn.Size = new Size(240, 72);
+            DashboardBtn.Padding = new Padding(34, 0, 0, 0);
+            DashboardBtn.Size = new Size(274, 96);
             DashboardBtn.TabIndex = 3;
             DashboardBtn.Text = "              Dashboard";
             DashboardBtn.TextAlign = ContentAlignment.MiddleLeft;
@@ -274,9 +289,10 @@
             // 
             panel2.Controls.Add(MenuBtn);
             panel2.Controls.Add(pictureBox3);
-            panel2.Location = new Point(3, 3);
+            panel2.Location = new Point(3, 4);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(208, 132);
+            panel2.Size = new Size(238, 176);
             panel2.TabIndex = 6;
             panel2.Click += panel2_Click;
             // 
@@ -285,9 +301,10 @@
             MenuBtn.BackColor = Color.DarkViolet;
             MenuBtn.Cursor = Cursors.Hand;
             MenuBtn.Image = Properties.Resources.apps1;
-            MenuBtn.Location = new Point(3, 20);
+            MenuBtn.Location = new Point(3, 27);
+            MenuBtn.Margin = new Padding(3, 4, 3, 4);
             MenuBtn.Name = "MenuBtn";
-            MenuBtn.Size = new Size(60, 26);
+            MenuBtn.Size = new Size(69, 35);
             MenuBtn.SizeMode = PictureBoxSizeMode.Zoom;
             MenuBtn.TabIndex = 5;
             MenuBtn.TabStop = false;
@@ -296,9 +313,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.shape_menu;
-            pictureBox3.Location = new Point(-65, 3);
+            pictureBox3.Location = new Point(-74, 4);
+            pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(226, 65);
+            pictureBox3.Size = new Size(258, 87);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
@@ -316,29 +334,34 @@
             Sidebar.Controls.Add(panel8);
             Sidebar.Dock = DockStyle.Left;
             Sidebar.Location = new Point(0, 0);
-            Sidebar.MaximumSize = new Size(215, 652);
-            Sidebar.MinimumSize = new Size(65, 652);
+            Sidebar.Margin = new Padding(3, 4, 3, 4);
+            Sidebar.MaximumSize = new Size(246, 869);
+            Sidebar.MinimumSize = new Size(74, 869);
             Sidebar.Name = "Sidebar";
-            Sidebar.Size = new Size(215, 652);
+            Sidebar.Size = new Size(246, 869);
             Sidebar.TabIndex = 0;
             // 
             // MainPanel
             // 
-            MainPanel.Location = new Point(217, 0);
+            MainPanel.Dock = DockStyle.Fill;
+            MainPanel.Location = new Point(246, 0);
+            MainPanel.Margin = new Padding(3, 4, 3, 4);
             MainPanel.Name = "MainPanel";
-            MainPanel.Size = new Size(976, 652);
+            MainPanel.Size = new Size(1115, 859);
             MainPanel.TabIndex = 1;
             // 
             // FrmDashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(1193, 652);
+            ClientSize = new Size(1361, 859);
             Controls.Add(MainPanel);
             Controls.Add(Sidebar);
-            MaximumSize = new Size(1209, 691);
-            MinimumSize = new Size(230, 691);
+            IsMdiContainer = true;
+            Margin = new Padding(3, 4, 3, 4);
+            MaximumSize = new Size(1379, 906);
+            MinimumSize = new Size(260, 906);
             Name = "FrmDashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmDashboard";
@@ -381,6 +404,6 @@
         private PictureBox pictureBox3;
         private FlowLayoutPanel Sidebar;
         private Microsoft.Data.SqlClient.SqlCommandBuilder sqlCommandBuilder1;
-        private Panel MainPanel;
+        public Panel MainPanel;
     }
 }

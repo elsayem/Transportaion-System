@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Dialog\FrmConfirmationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Dialog\FrmValidationDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -9,6 +11,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Pages\FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmDriverCrud.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Pages\FrmDrivers.cs">
@@ -23,6 +28,12 @@
     <Compile Update="Pages\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Pages\FrmOverlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmPassengerCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Pages\FrmPassengers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -35,10 +46,10 @@
     <Compile Update="Pages\FrmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmVehicles.cs">
+    <Compile Update="Pages\Vehicles\FrmVehicleCrud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\NewDriver.cs">
+    <Compile Update="Pages\Vehicles\FrmVehicles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="RJControls\RJButton.cs">
@@ -49,6 +60,12 @@
     </Compile>
     <Compile Update="RJControls\RJToggleButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Rows\UCDriver.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Rows\UCVehicle.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

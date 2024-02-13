@@ -80,7 +80,6 @@ namespace TransportReservationSystem.Migrations
                         .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("CurrentStation")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -93,9 +92,9 @@ namespace TransportReservationSystem.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<decimal>("License")
+                    b.Property<long>("License")
                         .HasMaxLength(14)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("bigint");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -125,6 +124,9 @@ namespace TransportReservationSystem.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("License")
                         .IsUnique();
 
                     b.HasIndex("Phone")
@@ -414,6 +416,9 @@ namespace TransportReservationSystem.Migrations
                     b.Property<DateTime>("ArrivalDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("AvailableSeats")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
@@ -479,9 +484,6 @@ namespace TransportReservationSystem.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AvailableSeats")
-                        .HasColumnType("int");
-
                     b.Property<string>("Brand")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -499,7 +501,6 @@ namespace TransportReservationSystem.Migrations
                         .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("CurrentStation")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("HasMaintenance")
@@ -514,9 +515,9 @@ namespace TransportReservationSystem.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<decimal>("LicensePlate")
+                    b.Property<long>("LicensePlate")
                         .HasMaxLength(8)
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("bigint");
 
                     b.Property<string>("Model")
                         .IsRequired()

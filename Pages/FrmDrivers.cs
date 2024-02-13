@@ -1,119 +1,123 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TransportReservationSystem.Core.Models;
+using TransportReservationSystem.Core.ViewModels;
 using TransportReservationSystem.Data.Context;
 using TransportReservationSystem.Pages;
+using TransportReservationSystem.Rows;
 
 namespace TransportReservationSystem
 {
     public partial class FrmDrivers : Form
     {
-        //public DataGridView DriversGrid {
-        //    get => DriversGridView;
-        //    set => DriversGridView = value;
-        //}
+        ApplicaitonDbContext applicaitonDbContext = new ApplicaitonDbContext();
 
         public FrmDrivers()
         {
             InitializeComponent();
         }
 
-        private void LoginBtn_Click(object sender, EventArgs e)
+        public void FrmDrivers_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void AddDriverBtn_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(OpenNewDriver);
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            thread.Join();
-
-            var driver = context.Drivers.ToList();
-            DriversGridView.DataSource = driver;
-        }
-
-        private void OpenNewDriver()
-        {
-            Application.Run(new NewDriver());
+            List<Driver> driverList = applicaitonDbContext.Drivers.ToList();
 
 
-        }
-        ApplicaitonDbContext context = new ApplicaitonDbContext();
-        private void FrmDrivers_Load(object sender, EventArgs e)
-        {
-            var driver = context.Drivers.ToList();
-            DriversGridView.DataSource = driver;
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var driver = context.Drivers.ToList();
-            DriversGridView.DataSource = driver;
-
-
-            //DriversGrid.DataSource = driver;
-            //DriversGridView.DataSource = DriversGrid.DataSource;
-        }
-
-        //private void UpdateBtn_Click(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    DataGridViewRow updatedRow = DriversGridView.Rows[e.RowIndex];
-        //    int DriverId = Convert.ToInt32(updatedRow.Cells["Id"].Value);
-
-        //    //DriversGridView.Rows[e.RowIndx]
-        //}
-
-        //private void UpdateBtn_Click(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    //DataGridViewRow updatedRow = DriversGridView.Rows[e.RowIndex];
-        //    DataGri
-        //    //int DriverId = int.Parse(ViewState["Id"].ToString());
-        //    int DriverId = Convert.ToInt32(updatedRow.Cells["Id"].Value);
-        //    var driver = context.Drivers.Where(d => d.Id == DriverId).FirstOrDefault();
-
-        //}
-
-        private void UpdateBtn_Click(object sender, EventArgs e)
-        {
-            int DriverId = Convert.ToInt32(DriversGridView.CurrentRow.Cells["Id"].Value);
-            var driver = context.Drivers.Where(d => d.Id == DriverId).FirstOrDefault();
-
-            if (driver != null)
+            List<DriverVm> drivers = driverList.Select(x => new DriverVm
             {
-                driver.Email = Convert.ToString(DriversGridView.CurrentRow.Cells["Email"].Value);
-                driver.License = Convert.ToDecimal(DriversGridView.CurrentRow.Cells["License"].Value);
-                driver.Salary = Convert.ToDecimal(DriversGridView.CurrentRow.Cells["Salary"].Value);
-                driver.Username = Convert.ToString(DriversGridView.CurrentRow.Cells["Email"].Value);
-                driver.Phone = Convert.ToString(DriversGridView.CurrentRow.Cells["Phone"].Value);
-                driver.UpdatedAt = DateTime.Now;
+                Id = x.Id,
+                License = x.License,
+                Username = x.Username,
+                Phone = x.Phone,
+                Email = x.Email,
+                Salary = x.Salary
+
+            }).ToList();
+
+
+            FLBDrivers.Controls.Clear();
+
+            foreach (var driver in drivers)
+            {
+                UCDriver uCDriver = new UCDriver();
+                uCDriver.Id = (int)driver.Id;
+                uCDriver.License = driver.License.ToString();
+                uCDriver.Username = driver.Username.ToString();
+                uCDriver.Phone = driver.Phone.ToString();
+                uCDriver.Email = driver.Email.ToString();
+                uCDriver.Salary = driver.Salary.ToString();
+
+                uCDriver.Width = FLBDrivers.Width;
+                FLBDrivers.Controls.Add(uCDriver);
             }
 
-            context.Drivers.Update(driver);
-            context.SaveChanges();
-            var FinalDrivers = context.Drivers.ToList();
-            DriversGridView.DataSource = FinalDrivers;
+
+
         }
 
-        private void DeleteBtn_Click(object sender, EventArgs e)
+
+
+        private void FLBDrivers_SizeChanged(object sender, EventArgs e)
         {
-
-            int DriverId = Convert.ToInt32(DriversGridView.CurrentRow.Cells["Id"].Value);
-            var driver = context.Drivers.Where(d => d.Id == DriverId).FirstOrDefault();
-            context.Drivers.Remove(driver);
-            context.SaveChanges();
-            var FinalDrivers = context.Drivers.ToList();
-            DriversGridView.DataSource = FinalDrivers;
+            FLBDrivers.SuspendLayout();
+            foreach (Control ctrl in FLBDrivers.Controls)
+            {
+                if (ctrl is UserControl) ctrl.Width = FLBDrivers.ClientSize.Width;
+            }
+            FLBDrivers.ResumeLayout();
         }
+
+        private void DriverSearchInput_KeyUp(object sender, KeyEventArgs e)
+        {
+            string trim = DriverSearchInput.Text.Trim().ToLower();
+
+            List<Driver> driverList = applicaitonDbContext.Drivers.ToList();
+
+            List<DriverVm> drivers = driverList.Select(x => new DriverVm
+            {
+
+                License = x.License,
+                Username = x.Username,
+                Phone = x.Phone,
+                Email = x.Email,
+                Salary = x.Salary
+
+            }).Where(x => x.Username.ToLower().Trim().Contains(trim)).ToList();
+
+            FLBDrivers.Controls.Clear();
+
+            foreach (var driver in drivers)
+            {
+                UCDriver uCDriver = new UCDriver();
+
+                uCDriver.License = driver.License.ToString();
+                uCDriver.Username = driver.Username.ToString();
+                uCDriver.Phone = driver.Phone.ToString();
+                uCDriver.Email = driver.Email.ToString();
+                uCDriver.Salary = driver.Salary.ToString();
+
+                uCDriver.Width = FLBDrivers.Width;
+                FLBDrivers.Controls.Add(uCDriver);
+            }
+        }
+
+        private void CreateDriverBtn_Click(object sender, EventArgs e)
+        {
+            //set time interval to make it smooter            
+            FrmDriverCrud frmDriverCrud = new FrmDriverCrud();
+            frmDriverCrud.ShowDialog();
+
+        }
+
+
+
     }
 }

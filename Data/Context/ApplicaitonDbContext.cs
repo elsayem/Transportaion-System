@@ -19,7 +19,7 @@ namespace TransportReservationSystem.Data.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
             optionsBuilder.UseLazyLoadingProxies()
-                .UseSqlServer("Data Source=.; Initial Catalog = Transport; Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;");
+                .UseSqlServer( "Data Source=.; Initial Catalog = Transport; Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;");
  
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

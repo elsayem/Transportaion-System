@@ -38,7 +38,7 @@ namespace TransportReservationSystem.Core.Constants
                         Role = role
                     };
 
-                  context.Staff.Add(admin);
+                    context.Staff.Add(admin);
                     context.SaveChanges();
                 }
 

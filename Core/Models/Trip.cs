@@ -20,6 +20,8 @@ namespace TransportReservationSystem.Core.Models
         public virtual Driver Driver { get; set; } = null!;
         public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
         public decimal Fare { get; set; }
+        public int AvailableSeats { get; set; }
+
 
     }
 }

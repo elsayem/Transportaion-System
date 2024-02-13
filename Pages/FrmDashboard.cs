@@ -16,6 +16,8 @@ namespace TransportReservationSystem
     {
         List<User> users = Repository.LoadUsers();
 
+        public static Form ActivatedForm = new Form();
+
         bool sidebarExpanded = true;
 
         public FrmDashboard()
@@ -32,7 +34,7 @@ namespace TransportReservationSystem
         private void MenuBtn_Click(object sender, EventArgs e)
         {
             //set time interval to make it smooter
-            SidebarTimer.Interval = 10;
+            SidebarTimer.Interval = 20;
             SidebarTimer.Start();
         }
 
@@ -41,23 +43,29 @@ namespace TransportReservationSystem
             if (sidebarExpanded)
             {
                 //if sidebar is expanded.
+                FrmOverlay frmOverlay = new FrmOverlay();
+                LoadForm(frmOverlay);
                 Sidebar.Width -= 10;
-
                 if (Sidebar.Width == Sidebar.MinimumSize.Width)
                 {
                     sidebarExpanded = false;
                     SidebarTimer.Stop();
+                    LoadForm(ActivatedForm);
                 }
             }
             else
             {
                 //if sidebar is not expanded.
+                FrmOverlay frmOverlay = new FrmOverlay();
+                LoadForm(frmOverlay);
                 Sidebar.Width += 10;
 
                 if (Sidebar.Width == Sidebar.MaximumSize.Width)
                 {
                     sidebarExpanded = true;
                     SidebarTimer.Stop();
+                    LoadForm(ActivatedForm);
+
                 }
             }
         }
@@ -90,6 +98,8 @@ namespace TransportReservationSystem
         {
             FrmDrivers frmDrivers = new FrmDrivers();
 
+            ActivatedForm = frmDrivers;
+
             //Change Background To Active
             ButtonColorChangeByClick(DriversBtn);
 
@@ -101,6 +111,8 @@ namespace TransportReservationSystem
         private void VehicleBtn_Click(object sender, EventArgs e)
         {
             FrmVehicles frmVehicles = new FrmVehicles();
+
+            ActivatedForm = frmVehicles;
 
             //Change Background To Active
             ButtonColorChangeByClick(VehicleBtn);
@@ -114,6 +126,9 @@ namespace TransportReservationSystem
         {
             FrmReservations frmReservations = new FrmReservations();
 
+            ActivatedForm = frmReservations;
+
+
             //Change Background To Active
             ButtonColorChangeByClick(ReservationBtn);
 
@@ -126,6 +141,9 @@ namespace TransportReservationSystem
         {
             FrmPassengers frmPassengers = new FrmPassengers();
 
+            ActivatedForm = frmPassengers;
+
+
             //Change Background To Active
             ButtonColorChangeByClick(PassengersBtn);
 
@@ -136,6 +154,9 @@ namespace TransportReservationSystem
         private void UsersBtn_Click(object sender, EventArgs e)
         {
             FrmUsers frmUsers = new FrmUsers();
+
+            ActivatedForm = frmUsers;
+
 
             //Change Background To Active
             ButtonColorChangeByClick(UsersBtn);
@@ -165,7 +186,7 @@ namespace TransportReservationSystem
 
         }
 
-        private void LoadForm(Form applicationForm)
+        public void LoadForm(Form applicationForm)
         {
             if (this.MainPanel.Controls.Count > 0)
                 this.MainPanel.Controls.RemoveAt(0);
@@ -182,17 +203,8 @@ namespace TransportReservationSystem
             Application.Run(new FrmLogin());
         }
 
-        private void rjButton1_Click(object sender, EventArgs e)
-        {
-            this.Alert("Success Alert", FrmAlert.enmType.Success);
-        }
 
-        /*show alert*/
-        public void Alert(string msg , FrmAlert.enmType type)
-        {
-            FrmAlert frmAlert = new FrmAlert();
-            frmAlert.showAlert(msg, type);
-        }
+
 
 
     }

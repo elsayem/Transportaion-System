@@ -29,28 +29,18 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            LblMsg = new Label();
-            OkBtn = new CustomControls.RJControls.RJButton();
             timer1 = new System.Windows.Forms.Timer(components);
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            pictureBox2 = new PictureBox();
+            OkBtn = new CustomControls.RJControls.RJButton();
+            LblMsg = new Label();
             panel2 = new Panel();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.DarkViolet;
-            panel1.Controls.Add(pictureBox1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(339, 29);
-            panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -65,6 +55,16 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DarkViolet;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(339, 29);
+            panel1.TabIndex = 0;
+            // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.warning;
@@ -74,18 +74,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
-            // 
-            // LblMsg
-            // 
-            LblMsg.Dock = DockStyle.Fill;
-            LblMsg.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblMsg.ForeColor = Color.Black;
-            LblMsg.Location = new Point(0, 0);
-            LblMsg.Name = "LblMsg";
-            LblMsg.Size = new Size(336, 30);
-            LblMsg.TabIndex = 2;
-            LblMsg.Text = "Message Text";
-            LblMsg.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // OkBtn
             // 
@@ -106,6 +94,18 @@
             OkBtn.TextColor = Color.White;
             OkBtn.UseVisualStyleBackColor = false;
             OkBtn.Click += OkBtn_Click;
+            // 
+            // LblMsg
+            // 
+            LblMsg.Dock = DockStyle.Fill;
+            LblMsg.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblMsg.ForeColor = Color.Black;
+            LblMsg.Location = new Point(0, 0);
+            LblMsg.Name = "LblMsg";
+            LblMsg.Size = new Size(336, 30);
+            LblMsg.TabIndex = 2;
+            LblMsg.Text = "Message Text";
+            LblMsg.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -129,21 +129,20 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmValidationDialog";
             Text = "FrmValidationDialog";
-            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private Label LblMsg;
-        private CustomControls.RJControls.RJButton OkBtn;
         private System.Windows.Forms.Timer timer1;
+        private PictureBox pictureBox1;
+        private Panel panel1;
+        private PictureBox pictureBox2;
+        private CustomControls.RJControls.RJButton OkBtn;
+        private Label LblMsg;
         private Panel panel2;
     }
 }
