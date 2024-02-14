@@ -30,6 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
+            CreateDriverBtn = new CustomControls.RJControls.RJButton();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
             panel5 = new Panel();
@@ -54,7 +55,6 @@
             DriverSearchInput = new TextBox();
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
-            CreateDriverBtn = new CustomControls.RJControls.RJButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel4.SuspendLayout();
@@ -79,6 +79,28 @@
             panel1.Padding = new Padding(5);
             panel1.Size = new Size(960, 94);
             panel1.TabIndex = 0;
+            // 
+            // CreateDriverBtn
+            // 
+            CreateDriverBtn.Anchor = AnchorStyles.Right;
+            CreateDriverBtn.BackColor = Color.DarkOrchid;
+            CreateDriverBtn.BackgroundColor = Color.DarkOrchid;
+            CreateDriverBtn.BorderColor = Color.PaleVioletRed;
+            CreateDriverBtn.BorderRadius = 5;
+            CreateDriverBtn.BorderSize = 0;
+            CreateDriverBtn.Cursor = Cursors.Hand;
+            CreateDriverBtn.FlatAppearance.BorderSize = 0;
+            CreateDriverBtn.FlatStyle = FlatStyle.Flat;
+            CreateDriverBtn.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CreateDriverBtn.ForeColor = Color.White;
+            CreateDriverBtn.Location = new Point(861, 29);
+            CreateDriverBtn.Name = "CreateDriverBtn";
+            CreateDriverBtn.Size = new Size(71, 30);
+            CreateDriverBtn.TabIndex = 2;
+            CreateDriverBtn.Text = "Create";
+            CreateDriverBtn.TextColor = Color.White;
+            CreateDriverBtn.UseVisualStyleBackColor = false;
+            CreateDriverBtn.Click += CreateDriverBtn_Click;
             // 
             // pictureBox1
             // 
@@ -307,7 +329,7 @@
             DriverSearchInput.BorderStyle = BorderStyle.None;
             DriverSearchInput.Location = new Point(142, 31);
             DriverSearchInput.Name = "DriverSearchInput";
-            DriverSearchInput.Size = new Size(569, 22);
+            DriverSearchInput.Size = new Size(569, 27);
             DriverSearchInput.TabIndex = 2;
             DriverSearchInput.KeyUp += DriverSearchInput_KeyUp;
             // 
@@ -333,28 +355,7 @@
             panel2.Padding = new Padding(50, 80, 50, 30);
             panel2.Size = new Size(960, 519);
             panel2.TabIndex = 1;
-            // 
-            // CreateDriverBtn
-            // 
-            CreateDriverBtn.Anchor = AnchorStyles.Right;
-            CreateDriverBtn.BackColor = Color.DarkOrchid;
-            CreateDriverBtn.BackgroundColor = Color.DarkOrchid;
-            CreateDriverBtn.BorderColor = Color.PaleVioletRed;
-            CreateDriverBtn.BorderRadius = 5;
-            CreateDriverBtn.BorderSize = 0;
-            CreateDriverBtn.Cursor = Cursors.Hand;
-            CreateDriverBtn.FlatAppearance.BorderSize = 0;
-            CreateDriverBtn.FlatStyle = FlatStyle.Flat;
-            CreateDriverBtn.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CreateDriverBtn.ForeColor = Color.White;
-            CreateDriverBtn.Location = new Point(861, 29);
-            CreateDriverBtn.Name = "CreateDriverBtn";
-            CreateDriverBtn.Size = new Size(71, 30);
-            CreateDriverBtn.TabIndex = 2;
-            CreateDriverBtn.Text = "Create";
-            CreateDriverBtn.TextColor = Color.White;
-            CreateDriverBtn.UseVisualStyleBackColor = false;
-            CreateDriverBtn.Click += CreateDriverBtn_Click;
+            panel2.Paint += panel2_Paint;
             // 
             // FrmDrivers
             // 

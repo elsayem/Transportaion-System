@@ -28,6 +28,12 @@
     <Compile Update="Pages\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Pages\FrmMaintinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\FrmMaintinanceCrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Pages\FrmOverlay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -44,6 +50,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Pages\FrmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\UpdateFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\UpdateMaintinance.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Pages\Vehicles\FrmVehicleCrud.cs">
