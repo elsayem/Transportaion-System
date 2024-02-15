@@ -82,7 +82,7 @@ namespace TransportReservationSystem.Pages
 
 
             //to disable vehicle and trip combo box and make them just showing the data:
-            VehicleComboBox.DropDownStyle= ComboBoxStyle.Simple;
+            VehicleComboBox.DropDownStyle = ComboBoxStyle.Simple;
             VehicleComboBox.Enabled = false;
 
             TripComboBox.DropDownStyle = ComboBoxStyle.Simple;

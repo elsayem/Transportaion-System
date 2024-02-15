@@ -35,7 +35,7 @@ namespace TransportReservationSystem.Pages
             VehicleComboBox.Items.Add("Select Vehicle");
 
             // Add the vehicle the data source
-            foreach (var item in context.Vehicles.Select(v => "NO:" + v.VehicleNo + v.Model + " - " + v.Brand).ToList())
+            foreach (var item in context.Vehicles.Select(v => "No:" + v.VehicleNo +" - " + v.Model + " - " + v.Brand).ToList())
             {
                 VehicleComboBox.Items.Add(item);
             }
@@ -152,7 +152,7 @@ namespace TransportReservationSystem.Pages
             string selectedVehicle = VehicleComboBox.SelectedItem.ToString();
             int startVehicle = selectedVehicle.IndexOf("No:") + 3;
             int endVehicle = selectedVehicle.IndexOf(" -", startVehicle);
-            int vehileNo = int.Parse(selectedTrip.Substring(startVehicle, endVehicle - startVehicle).Trim());
+            int vehileNo = int.Parse(selectedVehicle.Substring(startVehicle, endVehicle - startVehicle).Trim());
 
 
             //int vehileNo = int.Parse(selectedTrip.Substring(selectedTrip.IndexOf("NO:") + 3).Trim()); // Extract TripNo from the string
