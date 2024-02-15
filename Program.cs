@@ -1,4 +1,5 @@
 using TransportReservationSystem.Pages;
+using TransportReservationSystem.Pages.SchedualeMaintinance;
 
 namespace TransportReservationSystem
 {
@@ -13,7 +14,7 @@ namespace TransportReservationSystem
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmMaintinance());
+            Application.Run(new FrmSchedualeMaintinance());
         }
     }
 }

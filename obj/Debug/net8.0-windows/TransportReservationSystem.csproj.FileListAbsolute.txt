@@ -424,5 +424,8 @@ E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\
 E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.Pages.FrmMaintinance.resources
 E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.Pages.FrmMaintinanceCrud.resources
 E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.sourcelink.json
-E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.Pages.UpdateMaintinance.resources
 E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.Pages.UpdateFrom.resources
+E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.Pages.FrmUpdateMaintinance.resources
+E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.Pages.SchedualeMaintinance.FrmSchedualeMaintinance.resources
+E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.Pages.SchedualeMaintinance.FrmSchedualeMaintinanceCrud.resources
+E:\Software Engineering\ITI\Projects\12 - 2 - 2024\Transportation-System-master\obj\Debug\net8.0-windows\TransportReservationSystem.Pages.SchedualeMaintinance.FrmUpdateSchedualeMaintinance.resources
