@@ -34,12 +34,11 @@
             deleteToolStripMenuItem = new ToolStripMenuItem();
             tripsToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
-            DeleteBtn = new CustomControls.RJControls.RJButton();
             EditBtn = new CustomControls.RJControls.RJButton();
+            DeleteBtn = new CustomControls.RJControls.RJButton();
             LblLicense = new Label();
             LblUsername = new Label();
             LblPhone = new Label();
-            LblEmail = new Label();
             LblSalary = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
             contextMenuStrip1.SuspendLayout();
@@ -76,32 +75,14 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(EditBtn);
             panel1.Controls.Add(DeleteBtn);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(704, 3);
+            panel1.Location = new Point(685, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(153, 43);
+            panel1.Size = new Size(172, 43);
             panel1.TabIndex = 5;
-            // 
-            // DeleteBtn
-            // 
-            DeleteBtn.BackColor = Color.FromArgb(192, 0, 0);
-            DeleteBtn.BackgroundColor = Color.FromArgb(192, 0, 0);
-            DeleteBtn.BorderColor = Color.PaleVioletRed;
-            DeleteBtn.BorderRadius = 4;
-            DeleteBtn.BorderSize = 0;
-            DeleteBtn.FlatAppearance.BorderSize = 0;
-            DeleteBtn.FlatStyle = FlatStyle.Flat;
-            DeleteBtn.ForeColor = Color.White;
-            DeleteBtn.Location = new Point(83, 9);
-            DeleteBtn.Name = "DeleteBtn";
-            DeleteBtn.Size = new Size(56, 25);
-            DeleteBtn.TabIndex = 0;
-            DeleteBtn.Text = "Delete";
-            DeleteBtn.TextColor = Color.White;
-            DeleteBtn.UseVisualStyleBackColor = false;
-            DeleteBtn.Click += DeleteBtn_Click;
             // 
             // EditBtn
             // 
@@ -113,7 +94,7 @@
             EditBtn.FlatAppearance.BorderSize = 0;
             EditBtn.FlatStyle = FlatStyle.Flat;
             EditBtn.ForeColor = Color.White;
-            EditBtn.Location = new Point(21, 9);
+            EditBtn.Location = new Point(33, 9);
             EditBtn.Name = "EditBtn";
             EditBtn.Size = new Size(56, 25);
             EditBtn.TabIndex = 1;
@@ -122,13 +103,33 @@
             EditBtn.UseVisualStyleBackColor = false;
             EditBtn.Click += EditBtn_Click;
             // 
+            // DeleteBtn
+            // 
+            DeleteBtn.BackColor = Color.FromArgb(192, 0, 0);
+            DeleteBtn.BackgroundColor = Color.FromArgb(192, 0, 0);
+            DeleteBtn.BorderColor = Color.PaleVioletRed;
+            DeleteBtn.BorderRadius = 4;
+            DeleteBtn.BorderSize = 0;
+            DeleteBtn.FlatAppearance.BorderSize = 0;
+            DeleteBtn.FlatStyle = FlatStyle.Flat;
+            DeleteBtn.ForeColor = Color.White;
+            DeleteBtn.Location = new Point(95, 9);
+            DeleteBtn.Name = "DeleteBtn";
+            DeleteBtn.Size = new Size(56, 25);
+            DeleteBtn.TabIndex = 0;
+            DeleteBtn.Text = "Delete";
+            DeleteBtn.TextColor = Color.White;
+            DeleteBtn.UseVisualStyleBackColor = false;
+            DeleteBtn.Click += DeleteBtn_Click;
+            // 
             // LblLicense
             // 
             LblLicense.AutoSize = true;
+            LblLicense.BackColor = Color.Transparent;
             LblLicense.Dock = DockStyle.Fill;
             LblLicense.Location = new Point(3, 0);
             LblLicense.Name = "LblLicense";
-            LblLicense.Size = new Size(133, 49);
+            LblLicense.Size = new Size(147, 49);
             LblLicense.TabIndex = 0;
             LblLicense.Text = "Licenece";
             LblLicense.TextAlign = ContentAlignment.MiddleCenter;
@@ -136,10 +137,11 @@
             // LblUsername
             // 
             LblUsername.AutoSize = true;
+            LblUsername.BackColor = Color.Transparent;
             LblUsername.Dock = DockStyle.Fill;
-            LblUsername.Location = new Point(142, 0);
+            LblUsername.Location = new Point(156, 0);
             LblUsername.Name = "LblUsername";
-            LblUsername.Size = new Size(139, 49);
+            LblUsername.Size = new Size(231, 49);
             LblUsername.TabIndex = 1;
             LblUsername.Text = "Username";
             LblUsername.TextAlign = ContentAlignment.MiddleCenter;
@@ -147,30 +149,21 @@
             // LblPhone
             // 
             LblPhone.AutoSize = true;
+            LblPhone.BackColor = Color.Transparent;
             LblPhone.Dock = DockStyle.Fill;
-            LblPhone.Location = new Point(287, 0);
+            LblPhone.Location = new Point(393, 0);
             LblPhone.Name = "LblPhone";
-            LblPhone.Size = new Size(133, 49);
+            LblPhone.Size = new Size(147, 49);
             LblPhone.TabIndex = 2;
             LblPhone.Text = "Phone";
             LblPhone.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // LblEmail
-            // 
-            LblEmail.AutoSize = true;
-            LblEmail.Dock = DockStyle.Fill;
-            LblEmail.Location = new Point(426, 0);
-            LblEmail.Name = "LblEmail";
-            LblEmail.Size = new Size(133, 49);
-            LblEmail.TabIndex = 3;
-            LblEmail.Text = "Email";
-            LblEmail.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // LblSalary
             // 
             LblSalary.AutoSize = true;
+            LblSalary.BackColor = Color.Transparent;
             LblSalary.Dock = DockStyle.Fill;
-            LblSalary.Location = new Point(565, 0);
+            LblSalary.Location = new Point(546, 0);
             LblSalary.Name = "LblSalary";
             LblSalary.Size = new Size(133, 49);
             LblSalary.TabIndex = 4;
@@ -180,19 +173,17 @@
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.BackColor = Color.FromArgb(224, 224, 224);
-            tableLayoutPanel1.ColumnCount = 6;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.17129F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.8795872F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.1712856F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.1712856F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.1712856F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18.4352665F));
-            tableLayoutPanel1.Controls.Add(LblSalary, 4, 0);
-            tableLayoutPanel1.Controls.Add(LblEmail, 3, 0);
+            tableLayoutPanel1.ColumnCount = 5;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 17.87086F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 27.6274567F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 17.87086F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.25805F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.37278F));
+            tableLayoutPanel1.Controls.Add(LblSalary, 3, 0);
             tableLayoutPanel1.Controls.Add(LblPhone, 2, 0);
             tableLayoutPanel1.Controls.Add(LblUsername, 1, 0);
             tableLayoutPanel1.Controls.Add(LblLicense, 0, 0);
-            tableLayoutPanel1.Controls.Add(panel1, 5, 0);
+            tableLayoutPanel1.Controls.Add(panel1, 4, 0);
             tableLayoutPanel1.Cursor = Cursors.Hand;
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -223,16 +214,15 @@
 
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem editToolStripMenuItem;
-        private ToolStripMenuItem tripsToolStripMenuItem;
         private ToolStripMenuItem deleteToolStripMenuItem;
-        private Panel panel1;
         private CustomControls.RJControls.RJButton EditBtn;
         private CustomControls.RJControls.RJButton DeleteBtn;
         private Label LblLicense;
         private Label LblUsername;
         private Label LblPhone;
-        private Label LblEmail;
         private Label LblSalary;
-        private TableLayoutPanel tableLayoutPanel1;
+        private ToolStripMenuItem tripsToolStripMenuItem;
+        public Panel panel1;
+        public TableLayoutPanel tableLayoutPanel1;
     }
 }

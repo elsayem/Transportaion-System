@@ -83,9 +83,29 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1_U9lFekOUPmtzDQVMQOpchw2 {
+            get {
+                object obj = ResourceManager.GetObject("1_U9lFekOUPmtzDQVMQOpchw2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5f9c9cfc740569d1a4ca3543 {
             get {
                 object obj = ResourceManager.GetObject("5f9c9cfc740569d1a4ca3543", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AddressInput {
+            get {
+                object obj = ResourceManager.GetObject("AddressInput", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +126,36 @@ namespace TransportReservationSystem.Properties {
         internal static System.Drawing.Bitmap apps1 {
             get {
                 object obj = ResourceManager.GetObject("apps1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ArrivalDate {
+            get {
+                object obj = ResourceManager.GetObject("ArrivalDate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ArrivalDate1 {
+            get {
+                object obj = ResourceManager.GetObject("ArrivalDate1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ArrivalInput {
+            get {
+                object obj = ResourceManager.GetObject("ArrivalInput", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,6 +313,26 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap car_journey {
+            get {
+                object obj = ResourceManager.GetObject("car-journey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap car_journey1 {
+            get {
+                object obj = ResourceManager.GetObject("car-journey1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CategoryInput {
             get {
                 object obj = ResourceManager.GetObject("CategoryInput", resourceCulture);
@@ -286,6 +356,56 @@ namespace TransportReservationSystem.Properties {
         internal static System.Drawing.Bitmap ColorInput {
             get {
                 object obj = ResourceManager.GetObject("ColorInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DepatureInput {
+            get {
+                object obj = ResourceManager.GetObject("DepatureInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DepatureInput1 {
+            get {
+                object obj = ResourceManager.GetObject("DepatureInput1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DepatureInput2 {
+            get {
+                object obj = ResourceManager.GetObject("DepatureInput2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DepatureInput3 {
+            get {
+                object obj = ResourceManager.GetObject("DepatureInput3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DestinationInput {
+            get {
+                object obj = ResourceManager.GetObject("DestinationInput", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,6 +463,16 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DriverInput {
+            get {
+                object obj = ResourceManager.GetObject("DriverInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EmailInput {
             get {
                 object obj = ResourceManager.GetObject("EmailInput", resourceCulture);
@@ -393,6 +523,16 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EmailInput5 {
+            get {
+                object obj = ResourceManager.GetObject("EmailInput5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap error {
             get {
                 object obj = ResourceManager.GetObject("error", resourceCulture);
@@ -403,9 +543,69 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FareInput {
+            get {
+                object obj = ResourceManager.GetObject("FareInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FareInput1 {
+            get {
+                object obj = ResourceManager.GetObject("FareInput1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GenderInput {
             get {
                 object obj = ResourceManager.GetObject("GenderInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GenderInput1 {
+            get {
+                object obj = ResourceManager.GetObject("GenderInput1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GenderInput2 {
+            get {
+                object obj = ResourceManager.GetObject("GenderInput2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap General {
+            get {
+                object obj = ResourceManager.GetObject("General", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap General2 {
+            get {
+                object obj = ResourceManager.GetObject("General2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -613,6 +813,16 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PassengerHeading {
+            get {
+                object obj = ResourceManager.GetObject("PassengerHeading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PasswordInput {
             get {
                 object obj = ResourceManager.GetObject("PasswordInput", resourceCulture);
@@ -636,6 +846,16 @@ namespace TransportReservationSystem.Properties {
         internal static System.Drawing.Bitmap PasswordInput2 {
             get {
                 object obj = ResourceManager.GetObject("PasswordInput2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PasswordInput3 {
+            get {
+                object obj = ResourceManager.GetObject("PasswordInput3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -673,6 +893,16 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PhoneInput3 {
+            get {
+                object obj = ResourceManager.GetObject("PhoneInput3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RegisterBadge {
             get {
                 object obj = ResourceManager.GetObject("RegisterBadge", resourceCulture);
@@ -693,6 +923,26 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ReservationHeading {
+            get {
+                object obj = ResourceManager.GetObject("ReservationHeading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ReserveInput {
+            get {
+                object obj = ResourceManager.GetObject("ReserveInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SalaryInput {
             get {
                 object obj = ResourceManager.GetObject("SalaryInput", resourceCulture);
@@ -706,6 +956,36 @@ namespace TransportReservationSystem.Properties {
         internal static System.Drawing.Bitmap SearchInput {
             get {
                 object obj = ResourceManager.GetObject("SearchInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seat_airline {
+            get {
+                object obj = ResourceManager.GetObject("seat-airline", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seat_airline__1_ {
+            get {
+                object obj = ResourceManager.GetObject("seat-airline (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seat_airline__2_ {
+            get {
+                object obj = ResourceManager.GetObject("seat-airline (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -773,6 +1053,26 @@ namespace TransportReservationSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Source {
+            get {
+                object obj = ResourceManager.GetObject("Source", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap StationInput {
+            get {
+                object obj = ResourceManager.GetObject("StationInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap success {
             get {
                 object obj = ResourceManager.GetObject("success", resourceCulture);
@@ -786,6 +1086,36 @@ namespace TransportReservationSystem.Properties {
         internal static System.Drawing.Bitmap ticket {
             get {
                 object obj = ResourceManager.GetObject("ticket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Travel_Tools {
+            get {
+                object obj = ResourceManager.GetObject("Travel-Tools", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TripsPassengerHeading {
+            get {
+                object obj = ResourceManager.GetObject("TripsPassengerHeading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TripsPassengerHeading1 {
+            get {
+                object obj = ResourceManager.GetObject("TripsPassengerHeading1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -816,6 +1146,16 @@ namespace TransportReservationSystem.Properties {
         internal static System.Drawing.Bitmap UsermameInput {
             get {
                 object obj = ResourceManager.GetObject("UsermameInput", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UsermameInput1 {
+            get {
+                object obj = ResourceManager.GetObject("UsermameInput1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -856,6 +1196,26 @@ namespace TransportReservationSystem.Properties {
         internal static System.Drawing.Bitmap VehicleHeading3 {
             get {
                 object obj = ResourceManager.GetObject("VehicleHeading3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VehicleHeading4 {
+            get {
+                object obj = ResourceManager.GetObject("VehicleHeading4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VehicleInput {
+            get {
+                object obj = ResourceManager.GetObject("VehicleInput", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

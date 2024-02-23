@@ -17,7 +17,7 @@ namespace TransportReservationSystem.Core.Constants
             //admin
             string username = "admin";
             string email = "admin@gmail.com";
-            string password = "admin123456";
+            string password = " ";
             string role = Role.ADMIN.ToString();
 
             //Get All Staff

@@ -19,7 +19,7 @@ namespace TransportReservationSystem.Data.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
             optionsBuilder.UseLazyLoadingProxies()
-                .UseSqlServer( "Data Source=.; Initial Catalog = Transport; Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;");
+                .UseSqlServer( "Data Source=.; Initial Catalog = Transport2; Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;");
  
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -64,5 +64,7 @@ namespace TransportReservationSystem.Data.Context
         public DbSet<Trip> Trips { get; set; }
         public DbSet<Station> Stations { get; set; }
         public DbSet<Staff> Staff { get; set; }
+        public DbSet<Analatycal> Analatycals { get; set; }
+
     }
 }

@@ -7,64 +7,79 @@
     <Compile Update="Dialog\FrmValidationDialog.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Pages\Drivers\FrmDriverTrips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\Passengers\FrmPassengerBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\Passengers\FrmPassengerReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\Reservations\FrmReservationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dialog\StationModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\Booking\FrmBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\Booking\FrmsemiLowFloorSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\Booking\FrmInterState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\Booking\FrmTouristSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Pages\FrmAlert.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Pages\FrmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmDriverCrud.cs">
+    <Compile Update="Pages\Drivers\FrmDriverCrud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmDrivers.cs">
+    <Compile Update="Pages\Drivers\FrmDrivers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Pages\FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Pages\FrmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Pages\Maintinances\FrmMaintinance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Pages\Maintinances\FrmMaintinanceCrud.cs">
+    <Compile Update="Pages\Authentication\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Pages\FrmOverlay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmPassengerCrud.cs">
+    <Compile Update="Pages\Authentication\FrmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmPassengers.cs">
+    <Compile Update="Pages\Reservations\FrmReservations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmRegister.cs">
+    <Compile Update="Pages\Authentication\FrmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmReservations.cs">
+    <Compile Update="Pages\Passengers\FrmPassengerCrud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\FrmUsers.cs">
+    <Compile Update="Pages\Passengers\FrmPassengers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\SchedualeMaintinance\FrmSchedualeMaintinance.cs">
+    <Compile Update="Pages\Trips\FrmPassengerTrips.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\SchedualeMaintinance\FrmSchedualeMaintinanceCrud.cs">
+    <Compile Update="Pages\Trips\FrmShowTrips.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\SchedualeMaintinance\FrmUpdateSchedualeMaintinance.cs">
+    <Compile Update="Pages\Trips\FrmTripCrud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pages\UpdateFrom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Pages\Maintinances\UpdateMaintinance.cs">
+    <Compile Update="Pages\Trips\FrmTrips.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Pages\Vehicles\FrmVehicleCrud.cs">
@@ -72,6 +87,9 @@
     </Compile>
     <Compile Update="Pages\Vehicles\FrmVehicles.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RJControls\RashiDateTimePicker.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Update="RJControls\RJButton.cs">
       <SubType>Component</SubType>
@@ -83,6 +101,24 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="Rows\UCDriver.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Rows\UCDriverTrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Rows\UCPassenger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Rows\UCPassengerReservation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Rows\UCPassengerTrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Rows\UCReservation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Rows\UCTrip.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Rows\UCVehicle.cs">
